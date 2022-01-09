@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Event Field</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-5">All Event Details</h1>
+        <div class="card" style="width: 25rem;">
+            <div class="card-title" style="width: 25rem;">Birthday Event</div>
+            <img src="https://th.bing.com/th/id/OIP.ph8W0u1qki9jXXLIyKOgpwHaE8?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+            <div class="card-body">
+                <small><a onClick="isLikeClicked()"><i class="fa fa-heart " id="heart"style="color:red;font-size:40px;"></i></a></small>
+                <small class="bold">05/07/2022  05:10 PM</small>
+            </div>
+            <small>Indore</small>
+        </div>
+    </div>
+    <script>
+        
+        
+    isLike =false;
+        function isLikeClicked(){
+            
+          if(isLike){
+         
+              isLike = false;
+            //  document.getElementById("heart").style.color = "red";
+              document.getElementById("heart").classList.remove('fa-heart-o');
+             
+             
+           
+          }
+          else if(!Boolean(isLike)){
+       
+            isLike = true;
+       //     document.getElementById("heart").style.color = "white";
+            
+            document.getElementById("heart").classList.add('fa-heart-o');
+          
+            
+            
+        }
+        }
+    </script>
+</body>
+
+</html>
